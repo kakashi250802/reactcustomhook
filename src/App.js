@@ -2,6 +2,7 @@ import './App.css';
 import Clock from './components/Clock';
 import React, {useState} from 'react';
 import NewClock from './components/NewClock/index';
+import MagicBox from './components/MagicBox';
 
 
 function App() {
@@ -12,7 +13,8 @@ function App() {
       {showClock && <Clock />}
       <NewClock />
       <button onClick={() => setShowClock(false)}>HIDE CLOCK</button>
-    </div>
+    <MagicBox />
+     </div>
   );
 }
 
